@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 296865159,
+              "duration": 523177035,
               "status": "passed"
             },
             "match": {
@@ -15,53 +15,83 @@
           }
         ],
         "line": 4,
-        "name": "verify the first case",
+        "name": "Verify that user able to login succesfully",
         "description": "",
-        "id": "registration-functionality-scenario;verify-the-first-case",
+        "id": "login;verify-that-user-able-to-login-succesfully",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 32635976086,
+              "duration": 81927928411,
               "status": "passed"
             },
-            "comments": [
-              {
-                "line": 5,
-                "value": "# Given I lauch app"
-              }
-            ],
-            "line": 6,
-            "name": "i click on preferences",
+            "line": 5,
+            "name": "select Login option",
             "match": {
-              "location": "PreferenceTC.i_click_on_preferences()"
+              "location": "LoginTCs.select_Login_option()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36227,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "i enter my email",
+            "match": {
+              "location": "LoginTCs.i_enter_my_email()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2964949667,
+              "duration": 61132,
               "status": "passed"
             },
             "line": 7,
-            "name": "i click on Preference dependencies",
+            "name": "i select my tenant",
             "match": {
-              "location": "PreferenceTC.i_click_on_Preference_dependencies()"
+              "location": "LoginTCs.i_select_my_tenant()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3013076706,
+              "duration": 40277,
               "status": "passed"
             },
             "line": 8,
-            "name": "i check on Wifi",
+            "name": "i enter my password",
             "match": {
-              "location": "PreferenceTC.i_check_on_Wifi()"
+              "location": "LoginTCs.i_enter_my_password()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60820,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i submit",
+            "match": {
+              "location": "LoginTCs.i_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62815,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i login succesful",
+            "match": {
+              "location": "LoginTCs.i_login_succesful()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -76,10 +106,10 @@
         ]
       }
     ],
-    "name": "Registration functionality scenario",
+    "name": "Login",
     "description": "",
-    "id": "registration-functionality-scenario",
+    "id": "login",
     "keyword": "Feature",
-    "uri": "FeatureFiles/Register.feature"
+    "uri": "FeatureFiles/Login.feature"
   }
 ]

@@ -1,20 +1,20 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("FeatureFiles/Register.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("FeatureFiles/Login.feature");
 formatter.feature({
   "line": 1,
-  "name": "Registration functionality scenario",
+  "name": "Login",
   "description": "",
-  "id": "registration-functionality-scenario",
+  "id": "login",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 296865159,
+  "duration": 523177035,
   "status": "passed"
 });
 formatter.scenario({
   "line": 4,
-  "name": "verify the first case",
+  "name": "Verify that user able to login succesfully",
   "description": "",
-  "id": "registration-functionality-scenario;verify-the-first-case",
+  "id": "login;verify-that-user-able-to-login-succesfully",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -29,45 +29,75 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 5,
-      "value": "# Given I lauch app"
-    }
-  ],
+  "line": 5,
+  "name": "select Login option",
+  "keyword": "Given "
+});
+formatter.step({
   "line": 6,
-  "name": "i click on preferences",
+  "name": "i enter my email",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "i click on Preference dependencies",
+  "name": "i select my tenant",
   "keyword": "And "
 });
 formatter.step({
   "line": 8,
-  "name": "i check on Wifi",
+  "name": "i enter my password",
   "keyword": "And "
 });
+formatter.step({
+  "line": 9,
+  "name": "i submit",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "i login succesful",
+  "keyword": "Then "
+});
 formatter.match({
-  "location": "PreferenceTC.i_click_on_preferences()"
+  "location": "LoginTCs.select_Login_option()"
 });
 formatter.result({
-  "duration": 32635976086,
+  "duration": 81927928411,
   "status": "passed"
 });
 formatter.match({
-  "location": "PreferenceTC.i_click_on_Preference_dependencies()"
+  "location": "LoginTCs.i_enter_my_email()"
 });
 formatter.result({
-  "duration": 2964949667,
+  "duration": 36227,
   "status": "passed"
 });
 formatter.match({
-  "location": "PreferenceTC.i_check_on_Wifi()"
+  "location": "LoginTCs.i_select_my_tenant()"
 });
 formatter.result({
-  "duration": 3013076706,
+  "duration": 61132,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginTCs.i_enter_my_password()"
+});
+formatter.result({
+  "duration": 40277,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginTCs.i_submit()"
+});
+formatter.result({
+  "duration": 60820,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginTCs.i_login_succesful()"
+});
+formatter.result({
+  "duration": 62815,
   "status": "passed"
 });
 });

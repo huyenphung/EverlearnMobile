@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		tags = { "@order",
-				"@1" }, features = "classpath:FeatureFiles/Register.feature", glue = "classpath:Stepdef", plugin = {
+				"@1" }, features = "classpath:FeatureFiles/Login.feature", glue = "classpath:Stepdef", plugin = {
 				"json:target/positive/cucumber.json", "pretty", "html:target/positive/cucumber.html",
 				"html:target/cucumber_html_report" })
 

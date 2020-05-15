@@ -29,6 +29,7 @@ public class TestBase extends Capabilities {
 			try {
 				this.driver = reader.InitialIOS();
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}
@@ -37,6 +38,7 @@ public class TestBase extends Capabilities {
 			try {
 				this.driver = reader.InitialAndroid();
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}
